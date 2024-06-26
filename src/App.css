@@ -1,0 +1,17 @@
+.products-container{
+    width:100%;
+    min-height: 80vh;
+    display:grid;
+    grid-template-columns: repeat (4, );
+    justify-content: center;
+    padding:10px;
+}
+
+.card{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
