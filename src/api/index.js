@@ -1,11 +1,8 @@
-const BASEURL= 'https://fakestoreapi.com/';
+import axios from "axios";
 
-//export async function getAllProducts(){
-  ///  try{
-     //   const response= await fetch(`${BASEURL}/products`);
-       // const result= await response.json();
-    //return result.products
-    //}catch(error){
-       // console.log(error);
-    //}
-//}
+export async function productsData(){
+   const products= await axios.get(
+      "https://fakestoreapi.com/products"
+   );
+   return products;
+}
